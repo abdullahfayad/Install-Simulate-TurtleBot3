@@ -1,0 +1,12 @@
+In order to install TurtleBot3 and to launch any of its files you should follow these steps:
+1- You should create a ros workspace.
+2- Inside this workspace and inside the src folder path you should type these commands:
+  =>git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+  =>git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+  =>git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+3- Go back to the root of the workspace then type "catkin_make"
+4- Type "source devel/setup.bash" then type "export TURTLEBOT3_MODEL=burger". The model can be burger,waffle or waffle_pi.
+5- After that you should run roscore in other terminal.
+6- To launch the TurtleBot type for example "roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch" 
+
+*Note: If the Gazebo program close directly after launching, you should type this "export SVGA_VGPU10=0" before running the simulation.
